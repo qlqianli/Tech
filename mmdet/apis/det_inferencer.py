@@ -401,6 +401,7 @@ class DetInferencer(BaseInferencer):
         for ori_imgs, data in (track(inputs, description='Inference')
                                if self.show_progress else inputs):
             preds = self.forward(data, **forward_kwargs)
+            print(preds)
             visualization = self.visualize(
                 ori_imgs,
                 preds,

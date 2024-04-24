@@ -1,0 +1,1 @@
+python tools/dataset_converters/pascal_voc.py data --out-dir data/coco/annotations --out-format coco
